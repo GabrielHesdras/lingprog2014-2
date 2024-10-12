@@ -7,13 +7,18 @@ Exercícios sobre os comandos básicos em C
 
 //1. Faça um programa que imprima o seu nome.
 void q1() {
-    printf("João Paulo!");
+    printf("João Paulo!\n");
 }
 
 //2. Faça um programa que imprima o produto dos valores 30 e 27.
-
+void q2(){
+    printf("30*27 = %d\n", 30*27);
+}
 //3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
-
+void q3(){
+    float media = (5+8+12)/3.0;
+    printf(" Média  de 5,8,12 é igual a %.2f\n", media);
+}
 //4. Faça um programa que leia e imprima um número inteiro.
 
 //5. Faça um programa que leia dois números reais e os imprima.
@@ -89,5 +94,7 @@ void q1() {
 
 int main() {
     q1();
+    q2();
+    q3();
     return EXIT_SUCCESS;
 }
