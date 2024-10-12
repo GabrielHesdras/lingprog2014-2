@@ -20,7 +20,12 @@ void q3(){
     printf(" Média  de 5,8,12 é igual a %.2f\n", media);
 }
 //4. Faça um programa que leia e imprima um número inteiro.
-
+void q4(){
+    int num = 0;
+    printf("Digite um valor numérico inteiro: ");
+    scanf("%d", &num);
+    printf("O valor digitado foi %d\n", num);
+}
 //5. Faça um programa que leia dois números reais e os imprima.
 
 //6. Faça um programa que leia um número inteiro e imprima o seu
