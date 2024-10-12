@@ -98,8 +98,6 @@ void q4(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-    q1();
-    q2();
-    q3();
+    q4();
     return EXIT_SUCCESS;
 }
