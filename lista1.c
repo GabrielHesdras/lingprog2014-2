@@ -27,12 +27,35 @@ void q4(){
     printf("O valor digitado foi %d\n", num);
 }
 //5. Faça um programa que leia dois números reais e os imprima.
-
+void q5(){
+    int num1=0,num2=0;
+    printf("digite dois valores numericos inteiros");
+    scanf("%d",&num1);
+    printf("digite o valor do num1 %d\n,num1");
+    scanf("%d",&num2);
+    printf("digite o valor do num2 %d\n,num2");
+}
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
+void q6(){
+    float num=0;
+    printf("digite um valor:");
+    scanf("%d",&num);
+    printf("antecessor: %d e sucessor: %d, num-1,num+1");
+}
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+void q7() {
+    char nome[50],endereço[50],telefone[14];
+    scanf("nome:");
+    printf(" %50[^\n]", nome);
+    printf("endereço: ");
+    scanf(" %50[^\n]", endereço);
+    printf("telefone: ");
+    scanf(" %14[^\n]", telefone);
+    printf("%s\n%s\n%s\n",nome, endereço, telefone);
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
