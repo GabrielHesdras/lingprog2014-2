@@ -31,14 +31,14 @@ void q5(){
     int num1=0,num2=0;
     printf("digite dois valores numericos inteiros");
     scanf("%d",&num1);
-    printf("digite o valor do num1 %d\n,num1");
+    printf("digite o valor do num1 %d\n",num1);
     scanf("%d",&num2);
-    printf("digite o valor do num2 %d\n,num2");
+    printf("digite o valor do num2 %d\n",num2);
 }
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
 void q6(){
-    float num=0;
+    int num=0;
     printf("digite um valor:");
     scanf("%d",&num);
     printf("antecessor: %d e sucessor: %d, num-1,num+1");
@@ -47,24 +47,45 @@ void q6(){
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
 void q7() {
-    char nome[50],endereço[50],telefone[14];
+    char nome[50],endereco[50],telefone[14];
     scanf("nome:");
     printf(" %50[^\n]", nome);
-    printf("endereço: ");
-    scanf(" %50[^\n]", endereço);
+    printf("endereco: ");
+    scanf(" %50[^\n]", endereco);
     printf("telefone: ");
     scanf(" %14[^\n]", telefone);
-    printf("%s\n%s\n%s\n",nome, endereço, telefone);
+    printf("%s\n%s\n%s\n",nome, endereco, telefone);
 }
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
+void q8(){
+    int n1=0,n2=0,subtracao=0;
+    printf("digite o valor de n1 e n2: ");
+    scanf("%d %d",&n1,&n2);
+    subtracao=n1-n2;
+    printf("subtracao: %d",subtracao);
+}
 
 //9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+void q9(){
+    float n=0,resultado=0;
+    printf("digite o numero:");
+    scanf("%f",&n);
+    resultado=n/4;
+    printf("resultado: %.2f",resultado);
+}
 
 //10. Faça um programa que leia três números reais e calcule a
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+void q10(){
+    float n1=0,n2=0,n3=0,media;
+    printf("digite o valor de n1,n2 e n3:");
+    scanf("%f %f %f",&n1,&n2,&n3);
+    media=(n1+n2+n3)/3;
+    printf("media:%.2f",media);
+}
 
 //11. Faça um programa que leia dois números reais e calcule as
 //    quatro operações básicas entre estes dois números, adição,
@@ -121,6 +142,6 @@ void q7() {
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-    q4();
+    q10();
     return EXIT_SUCCESS;
 }
