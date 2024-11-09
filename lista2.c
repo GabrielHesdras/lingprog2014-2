@@ -63,22 +63,52 @@ void questao01() {
 
 //2. Faça um programa que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
 void questao02() {
-
+	int n1=0, n2=0, adicao=0;
+	printf("digite o valor de n1:");
+	scanf("%d",&n1);
+	printf("digite o valor de n2:");
+	scanf("%d",&n2);
+	adicao=n1+n2;
+	if(adicao>20){
+		adicao +=8;
+	} 
+	else{
+		adicao-=5;
+	}
+	printf("\n%d\n",adicao);
 }
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void questao03() {
-	
+	int n1=0;
+	printf("digite o valor de n1:");
+	scanf("%d",&n1);
+	if ((n1%3)==0)
+	printf("E multiplo de 3");
+else
+printf("Nao e multiplo de 3");
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
-	
+	int n1=0;
+	printf("digite o valor de n1:");
+	scanf("%d",&n1);
+	if ((n1%5)==0)
+	printf("e multiplo de 5");
+	else
+	printf("nao e multiplo de 5");
 }
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
-
+	int n1=0
+	printf("digite o valor de n1:");
+	scanf("%d",&n1);
+	if((n1%5)==0 && (n1%7)==0)
+	printf("e divisivel por 3 e 7");
+	else
+	printf("nao e divisel por 3 e 7");
 }
 
 //6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
@@ -252,6 +282,12 @@ int main() {
 			break;			
 		case 10:
 			questao10();
+			break;
+		case 3:
+			questao03();
+			break;
+		case 4:
+			questao04();
 			break;
 		default:
 			printf("Opção inválida!");
