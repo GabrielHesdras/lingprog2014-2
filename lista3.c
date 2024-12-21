@@ -88,18 +88,46 @@ void questão4(){
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros
 //lidos. Suponha que os números lidos sejam positivos.
-
-
+void questao5(){
+    int i, multiplicando, multiplicador, soma=0;
+    printf("digite o multiplicando:");
+    scanf("%d", & multiplicando:);
+    if (multiplicando<0)
+    printf("numero de multiplicando invalido \n");
+else if (multiplicador<0)
+printf("numero de multiplicador invalido \n");
+else if (multiplicando>multiplicador)
+printf("multiplicando deve ser menor que multiplicador \n");
+else{
+    for( i=1; i<= multiplicador; i++){
+        soma +=multiplicador;
+    }
+    printf("resultado: %d \n, soma");
+}
+}
 //6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 //Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
 //a partir da soma dos anteriores. Exemplo:
 //• 1 + 1 = 2, terceiro termo;
 //• 1 + 2 = 3, quarto termo, etc.
-
+void questao6(){
+    int i, fib=1, fib2=1, aux;
+    printf("%d \n", fib);
+    printf("%d \n", fib2);
+    for (i=2; i<20; i++){
+        aux=fib2;
+        fib2;=fib+fib2;
+        printf("%d \n", fib2);
+        fib=aux;
+    }
+    }
 //7. Crie um programa que permita entrar com o nome, a nota da
 //prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 //nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 //imprimir a média geral da turma.
+void questao7(){
+    
+}
 
 //8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 //Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
