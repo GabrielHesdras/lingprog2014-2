@@ -95,6 +95,14 @@ void q10(){
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+void questao 12()
+{
+    float num, resultado;
+    printf("digite o numero:");
+    scanf("%f",&num);
+    resultado=num+num;
+    printf ("quadrado do numero:%f",resultado);
+}
 
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.

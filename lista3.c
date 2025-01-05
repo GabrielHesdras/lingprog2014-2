@@ -126,7 +126,26 @@ void questao6(){
 //nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 //imprimir a média geral da turma.
 void questao7(){
-    
+    char nome [100];
+    int p1,p2,i;
+    float media=0,media final=0;
+    for(i=1;i<=5;i++{
+        printf("digite o nome:");
+        fflush(stdin);
+        fgets (nome,100,stdin);
+        printf("digite a nota da prova1:");
+        scanf("%d",& p1);
+        printf("digite a nota da prova 2 ");
+        scanf("%d",&p2)
+        printf("nome:%s", nome);
+        printf("notas-p1:%d\tp2:%d\n",p1,p2);
+        media=(p1+p2)/2;
+        printf("media de notas:%.2f\n",media);
+        media final +=media;
+    }
+        media final= media final/(i-1);
+        printf("media de notas dos alunos:%f\n",media final);
+
 }
 
 //8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
@@ -164,6 +183,18 @@ void questao7(){
 //ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 //ano, fazer um programa que calcule e imprima o tempo necessário para que a
 //população do país A ultrapasse a população do país B.
+void questao 12()
+{
+    int cont=0;
+    float a=5000000,b=7000000;
+    while (a<b)
+    {
+        a+=a*0.03;
+        b+=b*0.02;
+        cont ++;
+    }
+    printf("total de anos:%d",cont);
+}
 
 //13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
 //de consumo. Para cada consumidor, são digitados os seguintes dados:
